@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif , 'Open Sans', serif;
+    color: rgb(red, green, blue);
+    list-style: none;
+   
+  }
+  body{
+    background-image: url(background.jpeg);
+  }
+  
+  
+  a {
+    color: yellow;
+  }
+  
+  a:hover {
+    color:rgba(91,204,255,1)
+  }
+  
+
+  .fullcontainer{
+    position: relative;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  h1 {
+    color: navy;
+  }
+  
+  .details h2 {
+    color: navy;
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+  
+  .details p {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  
+  
+  .container .image-container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container .image-container .image{
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .container .image-container .image img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+  }
+  
+  .container .popup-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+  }
+  
+  .container .popup-image span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .container .popup-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 8px solid #fff;
+    border-radius: 8px;
+    width: 750px;
+    object-fit: cover;
+    padding: 20px;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  @media  (max-width:768px) {
+    .container .popup-image img{
+      width: 300px;
+    }
+    .container .image-container .image img{
+      width: 100%;
+    }
+    h1 {
+      font-size: 35px;
+    }
+  }
+  
+  @media  (min-width:768px) {
+    h1 {
+      padding: 0 3.9%;
+    }
+    .img-and-info {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+  
+  .details{
+    padding: 0 3.8% 5%;
+    flex-basis: 60%;
+    flex-shrink: 0;
+  } 
+  
+  .content {
+    padding: 0 3.8% 5%;
+    display: flex;
+    
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+  }
+  .more a {
+    text-decoration: none;
+    background: #1ac330;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 10px;
+    margin: 13px 13px;
+    font-size: 23px;
+    text-align: center;
+  }
